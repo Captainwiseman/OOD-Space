@@ -1,0 +1,9 @@
+{
+    "name": "OOD Space",
+    "alias": "ood.space",
+    "version": 2,
+    "files": [
+        "wall.jpg",
+        "style.css"
+    ]
+}
