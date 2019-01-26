@@ -1,0 +1,30 @@
+{
+    "name": "OOD Space",
+    "alias": "ood.space",
+    "version": 2,
+    "builds": [{
+            "src": "static/*",
+            "use": "@now/static"
+        },
+        {
+            "src": "api/**/index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [{
+            "src": "/api/(.+)",
+            "dest": "/api/$1"
+        },
+        {
+            "src": "/api/*",
+            "status": 404
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/static/$1"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
