@@ -2,12 +2,17 @@ import React from 'react';
 import './PageHeader.css';
 
 const PageHeader = () => {
+
+  const menu = () => {
+    
+  }
+
     return (
       <div className="header">
         <div className="logo">Wallek!</div>
         <div className="menu">
         <ul>
-          <li>Uno</li>
+          <li onClick={menu}>Uno</li>
           <li>Dos</li>
           <li>Tres</li>
         </ul>

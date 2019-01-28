@@ -1,11 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import './PageBody.css';
 
-const Body = () => {
+const Body = (props) => {
     return (
-      <div className="body">
-      <h1>Success!!!!</h1>
-      </div>
+      props.loadedPage
     );
   }
 
