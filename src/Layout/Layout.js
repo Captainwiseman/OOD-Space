@@ -11,11 +11,15 @@ class Layout extends Component {
     body: <Uno />
   }
 
+changeBody = () => {
+  this.setState({body: <h1>Wallek</h1>})
+}
+
   render() {
     return (
       <div className="layout">
-      <PageHeader />
-        <PageBody loadedPage={this.state.body}/>
+      <PageHeader clickPick = {this.changeBody} />
+        <PageBody loadedPage={this.state.body} />
       </div>
     );
   }
