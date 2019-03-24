@@ -17,35 +17,39 @@
     justify-content: flex-start;
     width: 100%;
     /* border: 3px solid white; */
-    background-color: black;
+    background-color: #010202;
+    box-shadow: 10px 10px 23px 0px rgba(0,0,0,0.75);
 }
 
 .title {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.315); */
 }
 
 .menu {
-    margin:10px 0;
-    justify-content: center;
+    /* margin:10px 0; */
+    justify-content: flex-end;
     display: flex;
     width: 100%;
 }
 
 .menu>ul {
+    margin-right: 1%;
     list-style: none;
     display: flex;
     flex-direction: row;
 }
 
 .menu>ul>li {
+    line-height: 200%;
     color: rgb(156, 151, 151);
     cursor: pointer;
     padding: 5px 10px;
 }
 
 .menu>ul>li:after {
+    height: 0px;
     display: block;
     content: '';
     border-bottom: solid 1px white;
@@ -66,6 +70,7 @@
 
 .logoHeader {
     margin: 10px;
+    width:100%;
     font-family: 'Open Sans Condensed', sans-serif;
     display: flex;
     flex-direction: column;

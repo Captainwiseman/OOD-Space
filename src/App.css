@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
+
 .App {
+  background: rgb(69, 72, 77);
   background-color: #181a1d;
   min-height: 100vh;
   display: flex;
