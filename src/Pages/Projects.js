@@ -1,14 +1,13 @@
 import React from 'react';
-import './Article.css';
+import './Projects.css';
 
-const Article = () => {
+const Projects = () => {
     return (
         <div className="article">
-        
-        <h1>This is Uno </h1>
+        <h1>This is DOs </h1>
         <p className="paragraph">lorem ipsum</p>
         </div>
     )
   }
 
-export default Article;
+export default Projects;

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './Layout.css';
 import PageHeader from './PageHeader/PageHeader';
 import PageBody from './PageBody/PageBody';
-import Article from '../Pages/Article'
+import Posts from '../Pages/Posts'
 import About from '../Pages/About'
 
 class Layout extends Component {
 
   state = {
     render: false,
-    body: <Article />
+    body: <Posts />
   }
 
 changeBody = () => {

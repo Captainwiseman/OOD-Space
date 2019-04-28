@@ -1,6 +1,6 @@
 import React from 'react';
 import './PageBody.css';
-import Article from '../../Pages/Article'
+import Article from '../../Pages/Posts'
 import About from '../../Pages/About'
 
 const siteStructure = new (function() {
