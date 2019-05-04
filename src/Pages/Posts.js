@@ -5,7 +5,7 @@ const Posts = () => {
     return (
         <div className="posts">
         
-        <h1>This is Uno </h1>
+        <h1>Posts</h1>
         <p className="paragraph">lorem ipsum</p>
         </div>
     )

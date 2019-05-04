@@ -1,26 +1,32 @@
-import React, { Component } from 'react';
-import './Layout.css';
-import PageHeader from './PageHeader/PageHeader';
-import PageBody from './PageBody/PageBody';
-import Posts from '../Pages/Posts'
-import About from '../Pages/About'
+import React, { Component } from "react";
+import "./Layout.css";
+import PageHeader from "./PageHeader/PageHeader";
+import PageBody from "./PageBody/PageBody";
+import Posts from "../Pages/Posts";
+import Projects from "../Pages/Projects";
+import About from "../Pages/About";
 
 class Layout extends Component {
+  siteMap = {
+    Posts: Posts,
+    Projects: Projects,
+    About: About
+  };
 
   state = {
-    render: false,
-    body: <Posts />
-  }
+    currentPage: this.siteMap.Posts
+  };
 
-changeBody = () => {
-  this.setState({body: <h1>Wallek</h1>})
-}
+  changePage = (page) => {
+    console.log("clicked", page)
+    this.setState({currentPage: this.siteMap[page]})
+  }
 
   render() {
     return (
       <div className="layout">
-      <PageHeader clickPick = {this.changeBody} />
-        <PageBody loadedPage={this.state.body} />
+        <PageHeader changePage= {this.changePage}/>
+        <PageBody page={this.state.currentPage} />
       </div>
     );
   }

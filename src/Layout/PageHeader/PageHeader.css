@@ -91,6 +91,7 @@
 .social {
     font-size: 1rem;
     justify-content: flex-end;
+    padding: 10px 0;
     display: flex;
     width: 100%;
 }

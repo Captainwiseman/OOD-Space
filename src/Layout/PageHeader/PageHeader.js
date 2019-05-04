@@ -18,9 +18,9 @@ const PageHeader = props => {
       </div>
       <div className="menu">
         <ul>
-          <li onClick={props.clickPick}>Posts</li>
-          <li onClick={props.clickPick}>Projects</li>
-          <li onClick={props.clickPick}>About</li>
+          <li onClick={() => props.changePage("Posts")}>Posts</li>
+          <li onClick={() => props.changePage("Projects")}>Projects</li>
+          <li onClick={() => props.changePage("About")}>About</li>
         </ul>
       </div>
     </div>

@@ -1,28 +1,15 @@
-import React from 'react';
-import './PageBody.css';
-import Article from '../../Pages/Posts'
-import About from '../../Pages/About'
+import React from "react";
+import "./PageBody.css";
+import Posts from "../../Pages/Posts";
+import About from "../../Pages/About";
 
-const siteStructure = new (function() {
-  this.pages = {
-    Article: Article,
-    About: About
-  }
-  this.homePage = this.pages.Article
-  this.currentPage = this.homePage
-})()
-
-const loadCurrentPage = () => {
-  let CurrentPage = siteStructure.currentPage
-  return <CurrentPage />
-}
-
-const Body = (props) => {
-    return (
-      <div className="pageBody">
-      {loadCurrentPage}
-      </div>
-    );
-  }
+const Body = props => {
+  console.log(props)
+  return (
+    <div className="pageBody">
+      {props.page()}
+    </div>
+  );
+};
 
 export default Body;
