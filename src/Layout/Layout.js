@@ -25,8 +25,8 @@ class Layout extends Component {
   render() {
     return (
       <div className="layout">
-        <PageHeader changePage= {this.changePage}/>
-        <PageBody page={this.state.currentPage} />
+        <PageHeader changePage = {this.changePage}/>
+        <PageBody page = {this.state.currentPage} />
       </div>
     );
   }

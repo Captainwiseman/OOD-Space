@@ -8,6 +8,13 @@ const PageHeader = props => {
         <div className="title">
           <span className="logo">Object Oriented Dreamspace</span>
         </div>
+        <div className="menu">
+          <ul>
+            <li onClick={() => props.changePage("Posts")}>Posts</li>
+            <li onClick={() => props.changePage("Projects")}>Projects</li>
+            <li onClick={() => props.changePage("About")}>About</li>
+          </ul>
+        </div>
         <div className="social">
           <ul>
             <a href=""><li className="facebook" /></a>
@@ -15,13 +22,6 @@ const PageHeader = props => {
             <a href=""><li className="linkedin" /></a>
           </ul>
         </div>
-      </div>
-      <div className="menu">
-        <ul>
-          <li onClick={() => props.changePage("Posts")}>Posts</li>
-          <li onClick={() => props.changePage("Projects")}>Projects</li>
-          <li onClick={() => props.changePage("About")}>About</li>
-        </ul>
       </div>
     </div>
   );
