@@ -6,7 +6,8 @@ const PageHeader = props => {
     <div className="pageHeader">
       <div className="header">
         <div className="title">
-          <span className="logo">Object Oriented Dreamspace</span>
+          <div className="logoImage"/>
+          <span className="logoTitle">Object Oriented Dreamspace</span>
         </div>
         <div className="menu">
           <ul>
@@ -20,6 +21,7 @@ const PageHeader = props => {
             <a href=""><li className="facebook" /></a>
             <a href=""><li className="instagram" /></a>
             <a href=""><li className="linkedin" /></a>
+            <a href=""><li className="github" /></a>
           </ul>
         </div>
       </div>

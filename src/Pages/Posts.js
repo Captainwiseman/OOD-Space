@@ -12,7 +12,7 @@ const PostsBoard = () => {
     
     let renderedCards = [];
     cardData.forEach(card => {
-      renderedCards.push(<li><PostCard cardImage= {card.image} cardTitle={card.title} cardContent={card.content}/></li>)
+      renderedCards.push(<PostCard key={card.key} cardImage= {card.image} cardTitle={card.title} cardContent={card.content}/>)
     })
     console.log(renderedCards)
     return renderedCards
@@ -26,7 +26,7 @@ const PostsBoard = () => {
 
 const Posts = () => {
     return (
-      <div>
+      <div className="postsPage">
       <PostsBoard />
       </div>
     )

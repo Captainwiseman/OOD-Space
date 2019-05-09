@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Layout.css";
 import PageHeader from "./PageHeader/PageHeader";
 import PageBody from "./PageBody/PageBody";
+import PageFooter from "./PageFooter/PageFooter"
 import Posts from "../Pages/Posts";
 import Projects from "../Pages/Projects";
 import About from "../Pages/About";
@@ -27,6 +28,7 @@ class Layout extends Component {
       <div className="layout">
         <PageHeader changePage = {this.changePage}/>
         <PageBody page = {this.state.currentPage} />
+        <PageFooter />
       </div>
     );
   }

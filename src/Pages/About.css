@@ -1,10 +1,7 @@
-.pageBody {
-    margin: 25px 0;
+.aboutPage {
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-.paragraph {
-    
 }

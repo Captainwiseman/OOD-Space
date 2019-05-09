@@ -3,9 +3,9 @@ import './About.css';
 
 const About = () => {
     return (
-        <div className="article">
-        <h1>About</h1>
-        <p className="paragraph">lorem ipsum</p>
+        <div className="aboutPage">
+          <h1>About</h1>
+          <p className="paragraph">lorem ipsum</p>
         </div>
     )
   }
