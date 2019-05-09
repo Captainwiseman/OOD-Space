@@ -5,6 +5,7 @@
 
 .App {
   background: rgb(69, 72, 77);
+  overflow-x:hidden;
   background-color: #181a1d;
   min-height: 100%;
   min-width: 100%;
